@@ -5,9 +5,13 @@ import EquipWindow from './EquipWindow'
 import App from '../App'
 
 test('renders learn react link', () => {
-    var temp = "Karan"
-    const {getByTestId} = render(<EquipWindow name={Name}/>)
+    const {getByTestId} = render(<EquipWindow name={"Karan"}/>)
+    const {getByTestId} = render(<EquipWindow name={"Karan"} description={"Greeting"}/>)
     const headerVal = getByTestId('testID');
     expect(headerVal.textContent).toBe(temp);
+
+    const temp = getByTestId('theDescriptionID');
+    expect(temp.textContent).toBe("Greeting");
+
 
 }); 
