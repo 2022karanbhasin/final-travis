@@ -97,7 +97,7 @@ const EquipmentForm = () => {
             onChange={(e, { value }) => setExercisesAmount(value)} />
         </Form.Field>
         <Form.Field>
-          <Header dividing color="blue">
+          <Header dividing color="blue"  data-cy={'button'} >
             What Muscle Groups?
             <Header.Subheader>
               Specify what types of exercise you would like to perform.
@@ -123,7 +123,8 @@ const EquipmentForm = () => {
           as={Link}
           to='/workouts'
           primary
-          disabled={!a}>
+          disabled={!a}
+          >
           GENERATE WORKOUT
         </Button>
       </Form>
