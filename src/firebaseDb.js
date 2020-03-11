@@ -3,7 +3,7 @@ import 'firebase/database';
 
 const firebaseConfig = {
   apiKey: "AIzaSyDfmgY9F8ms-PTeDATk0GKOQtA63VueGwc",
-  authDomain: "nu-hiit.firebaseapp.com",
+  authDomain: "finaltravis.firebaseapp.com",
   databaseURL: "https://nu-hiit.firebaseio.com",
   projectId: "nu-hiit",
   storageBucket: "nu-hiit.appspot.com",
