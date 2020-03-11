@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { BrowserRouter, Route } from 'react-router-dom';
 import { Container } from 'semantic-ui-react';
 import SplashPage from './Pages/SplashPage';
@@ -16,6 +16,9 @@ const App = () => {
     firebase.auth().onAuthStateChanged(setUser);
   }, []);
   
+
+
+
   const withMenu = (page) => {
     return (
       <Container>

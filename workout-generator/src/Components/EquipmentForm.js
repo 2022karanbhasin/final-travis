@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext} from 'react';
 import { Link } from 'react-router-dom';
 import { Segment, Form, Checkbox, Header, Button, Dropdown } from 'semantic-ui-react';
 import { EQUIPMENT_LIST, MUSCLE_LIST } from '../constants';
@@ -74,6 +74,7 @@ const EquipmentForm = () => {
               <Checkbox
                 label={name(item.title)}
                 value={item.title}
+                data-cy={name(item.title)}
                 checked={equipment.includes(item.title)}
                 onChange={(e, { value }) => addEquip(value)} />
               <EquipWindow name={name(item.title)} description={item.description} url={item.url} />
@@ -97,7 +98,7 @@ const EquipmentForm = () => {
             onChange={(e, { value }) => setExercisesAmount(value)} />
         </Form.Field>
         <Form.Field>
-          <Header dividing color="blue"  data-cy={'button'} >
+          <Header dividing color="blue">
             What Muscle Groups?
             <Header.Subheader>
               Specify what types of exercise you would like to perform.
@@ -124,7 +125,7 @@ const EquipmentForm = () => {
           to='/workouts'
           primary
           disabled={!a}
-          >
+          data-cy={'button'}>
           GENERATE WORKOUT
         </Button>
       </Form>

@@ -14,7 +14,6 @@ const TopMenu = ({user}) => {
       style={{ backgroundColor: "white" }}
     >
       <Menu.Item
-        data-cy="Workout"
         active={location.pathname === "/" | location.pathname === "/workouts"}
         as={Link}
         to="/workouts"
@@ -26,7 +25,7 @@ const TopMenu = ({user}) => {
           content="Workout"
         />
       </Menu.Item>
-      <Menu.Item active={location.pathname === "/profile"} as={Link} to="/profile">
+      <Menu.Item data-cy={"SignIn"} active={location.pathname === "/profile"} as={Link} to="/profile">
         <Header
           as="h4"
           color="blue"
