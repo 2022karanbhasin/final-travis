@@ -5,7 +5,6 @@
   "dependencies": {
     "@material-ui/core": "^4.9.1",
     "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "firebase": "^7.6.2",
     "react": "^16.12.0",
@@ -14,7 +13,6 @@
     "react-firebaseui": "^4.1.0",
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.3.0",
-    "react-testing-library": "^8.0.1",
     "semantic-ui-react": "^0.88.2",
     "yarn": "^1.21.1"
   },
@@ -22,10 +20,10 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
     "cypress:open": "cypress open",
     "cypress:ci": "cypress run --config video=false",
-    "test:ci": "react-scripts test --watchAll=false && start-server-and-test start http://localhost:3000 cypress:ci"
+    "test:ci": "react-scripts test --watchAll=false && start-server-and-test start http://localhost:3000 cypress:ci",
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -43,6 +41,8 @@
     ]
   },
   "devDependencies": {
-    "start-server-and-test": "^1.10.9"
+    "@testing-library/react": "^9.5.0",
+    "cypress": "^4.1.0",
+    "start-server-and-test": "^1.10.8"
   }
 }
