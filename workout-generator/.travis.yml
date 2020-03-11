@@ -14,5 +14,8 @@ cache:
 script:
   - npm run test:ci
   - npm run build
+  - npm run cypress:ci
+  - npm run test:ci
+ 
 before_install:
   - cd workout-generator
